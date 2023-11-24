@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<style>
+    body {
+        background-image: url(./img/back2.jpg);
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+
+            </div>
+            <div class="nav-yazi">
+                Abra Kadab ra
+            </div>
+            <ul class="list">
+                <li class="list-item">
+                    <a href="Anasayfa.html">Anasayfa</a>
+                </li>
+                <li class="list-item">
+                    <a href="Snitch.html">Snitch</a>
+                </li>
+                <li class="list-item">
+                    <a href="iletisim.html">İletişim</a>
+                </li>
+                <li class="list-item">
+                    <a href="Okulumuz.html">Okulumuz</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <section>
+            <div class="div-form">
+                <form class="form">
+                    <label class="label-1" for="Ad">Ad</label>
+                    <input class="inputt" type="text">
+                    <label class="label-1" for="Soyad">Soyad</label>
+                    <input class="inputt" type="text">
+                    <label class="label-1" for="E-mail">E-mail</label>
+                    <input class="inputt" type="email">
+                    <label class="label-1">Bölüm</label>
+                    <div class="radyo1">
+                        <input class="radyo" type="radio" name="Okul">Gryffindor
+                        <input class="radyo" type="radio" name="Okul">Slytherin
+                        <input class="radyo" type="radio" name="Okul">Hufflepuff
+                    </div>
+
+                    <button class="btn">Yolla</button> 
+
+
+                </form>
+                
+                <button class="btn sound-button" onclick="playSound()">Bizi Aramak İçin Tıkla</button>
+                <audio id="button-sound" src="./kotu.mp3"></audio>
+               
+                   
+            </div>
+        </section>
+    </header> <br> <br><br><br>
+    <footer>
+        <div style="color: white; text-align: center;">
+            Büyücü Olunmaz Büyücü Doğulur.
+        </div>
+    </footer>
+
+    
+
+
+
+    
+    
+    
+    
+    <script> function playSound() {
+        var audio = document.getElementById("button-sound");
+        audio.play();
+        document.querySelector('.sound-button').innerText = "Biz sizi buluruz :) :)";
+    }</script>
+
+
+
+</body>
+</html>
